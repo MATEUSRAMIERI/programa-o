@@ -11,6 +11,19 @@ package com.mycompany.programacao01;
 public class Programacao01 {
 
     public static void main(String[] args) {
-        System.out.println("ola mundo!");
+        Estudante mateus = new Estudante();
+        Estudante joao = new Estudante();
+        Estudante leonardoG = new Estudante();
+
+        mateus.setNome("mateus");
+         joao.setNome("joao");
+          leonardoG.setNome("leonardoG");
+
+        System.out.println(leonardoG.getNome());
+        System.out.println(joao.getNome());
+        System.out.println(mateus.getNome());
+
+
+
     }
 }
