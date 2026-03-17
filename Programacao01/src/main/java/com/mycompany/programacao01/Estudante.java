@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author aluno
  */
- public class Estudante {
+public class Estudante {
 
     private static String nome;
     private Date Datanascimento;
@@ -18,6 +18,12 @@ import java.util.Date;
     private char genero;
     private String matricula;
     private String email;
+    private String nivelEnsino;
+    private int telefone;
+    private String AnodeEntrada;
+    private String Situação;
+    private String SemestreEn;
+    private String digito;
 
     public Estudante() {
         nome = "nobody";
@@ -36,7 +42,7 @@ import java.util.Date;
     }
 
     public static void setNome(String _nome) {
-        nome = _nome;    
+        nome = _nome;
     }
 
     public Date getDatanascimento() {
@@ -64,11 +70,11 @@ import java.util.Date;
     }
 
     public String getMatricula() {
-        return matricula;
+        return AnodeEntrada + SemestreEn + digito;
     }
 
-    public void setMatricula(String _matricula) {
-        matricula = _matricula;
+    public void setMatricula(String _digito) {
+        digito = _digito;
     }
 
     public String getEmail() {
@@ -77,6 +83,46 @@ import java.util.Date;
 
     public void setEmail(String _email) {
         email = _email;
+    }
+
+    public int getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(int _telefone) {
+        telefone = _telefone;
+    }
+
+    public String getAnodeEntrada() {
+        return AnodeEntrada;
+    }
+
+    public void setAnodeEntrada(String _AnodeEntrada) {
+        AnodeEntrada = _AnodeEntrada;
+    }
+
+    public String getSituação() {
+        return Situação;
+    }
+
+    public void setSituação(String _Situação) {
+        Situação = _Situação;
+    }
+
+    public String getSemestreEn() {
+        return SemestreEn;
+    }
+
+    public void setSituaçãoEn(String _SemestreEn) {
+        SemestreEn = _SemestreEn;
+    }
+
+    public String getnivelEnsino() {
+        return nivelEnsino;
+    }
+
+    public void setnivelEnsino(String _nivelEnsino) {
+        nivelEnsino = _nivelEnsino;
     }
 
 }
